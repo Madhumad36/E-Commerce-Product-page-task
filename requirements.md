@@ -1,4 +1,4 @@
-# Software Requirements – Handbag Product Page
+# Requirements – Handbag Product Page
 
 ## Hardware Requirements
 - Processor: Intel i3 or equivalent (or higher)
