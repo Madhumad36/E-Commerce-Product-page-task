@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BagAura | Handbag Product</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="brand">BagAura</div>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search handbags, accessories..."
+               aria-label="Search products">
+        <button aria-label="Search">🔍</button>
+    </div>
+
+    <nav class="nav-links">
+        <a href="#">Shop</a>
+        <a href="#">New</a>
+        <a href="#">Collections</a>
+        <a href="#">Support</a>
+    </nav>
+</header>
+
+<main class="product-wrapper">
+
+    <!-- IMAGE SECTION -->
+    <section class="image-section">
+        <img id="mainImage"
+             src="https://m.media-amazon.com/images/I/719F9jubswL._SY695_.jpg"
+             alt="Women's navy blue leather laptop handbag main view">
+
+        <div class="thumbnail-row">
+            <img src="https://m.media-amazon.com/images/I/91z2XWxxAtL._SY695_.jpg"
+                 alt="Handbag brand view"
+                 onclick="changeImage(this.src)">
+            <img src="https://m.media-amazon.com/images/I/71jUkkok23L._SY695_.jpg"
+                 alt="Handbag real life usage view"
+                 onclick="changeImage(this.src)">
+            <img src="https://m.media-amazon.com/images/I/71UPtCY-QDL._SY695_.jpg"
+                 alt="Handbag front view"
+                 onclick="changeImage(this.src)">
+
+            <img src="https://m.media-amazon.com/images/I/71gnOOjZxyL._SY695_.jpg"
+                 alt="Handbag side angle view"
+                 onclick="changeImage(this.src)">
+
+            <img src="https://m.media-amazon.com/images/I/71P0BtdsVML._SY695_.jpg"
+                 alt="Handbag interior compartment view"
+                 onclick="changeImage(this.src)">
+        </div>
+    </section>
+
+    <!-- DETAILS SECTION -->
+    <section class="details-section">
+        <h1>Women's Premium Laptop Satchel Handbag</h1>
+        <p class="brand-name">LAVIE LUXE COLLECTION</p>
+
+        <div class="price-box">
+            <span class="price-now">₹3,229</span>
+            <span class="price-old">₹3,799</span>
+            <span class="discount">15% OFF</span>
+        </div>
+
+        <p class="description">
+            Elegant and functional laptop handbag designed for modern women.
+            Crafted with premium faux leather, spacious compartments, and
+            a refined silhouette—perfect for work and daily use.
+        </p>
+
+        <ul class="features">
+            <li>✔ Fits laptops up to 15 inches</li>
+            <li>✔ Premium faux leather finish</li>
+            <li>✔ Multiple inner compartments</li>
+            <li>✔ Comfortable shoulder straps</li>
+        </ul>
+
+        <div class="ratings">
+            ⭐⭐⭐⭐☆ <span>4.6 (1,284 verified reviews)</span>
+        </div>
+
+        <div class="qty-control">
+            <button onclick="updateQty(-1)" aria-label="Decrease quantity">−</button>
+            <input id="qtyInput"
+                   type="number"
+                   value="1"
+                   min="1"
+                   readonly
+                   aria-label="Product quantity">
+            <button onclick="updateQty(1)" aria-label="Increase quantity">+</button>
+        </div>
+
+        <button class="add-cart">Add to Cart</button>
+
+        <div class="delivery-box">
+            <strong>🚚 Free Delivery</strong>
+            <p>Delivered within 3–5 business days.</p>
+        </div>
+        <div class="return-box">
+            <strong>🔄 Easy Returns</strong>
+            <p>30-day return policy for hassle-free shopping.</p>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    © 2026 BagAura. Designed for modern women.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
